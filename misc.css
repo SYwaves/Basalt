@@ -1,0 +1,590 @@
+/* ======================= */
+
+/* MISC */
+
+/* ======================= */
+
+::selection {
+    background-color: rgba(0, 0, 255, 0.7);
+    color: white;
+}
+
+select {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    border: solid 2px grey;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+body.wait {
+    cursor: wait;
+}
+
+body.wait * {
+    cursor: auto;
+}
+
+input {
+    font-size: 90%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+#action-area > p {
+    font-size: 90%;
+    font-weight: 500;
+}
+
+#action-area > h1 {
+    font-size: 150%;
+}
+
+div.buttons input, input.button, button, file, a.button {
+    margin: 0 2px;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+
+#who-rated-page-area > h2 {
+    display: none;
+}
+
+#who-rated-page-area>div {
+    column-count: 4;
+}
+
+@media (max-width: 900px) {
+    #who-rated-page-area>div {
+     column-count: 3;
+    }
+}
+
+@media (max-width: 700px) {
+    #who-rated-page-area>div {
+     column-count: 2;
+    }
+}
+
+@media (max-width: 540px) {
+    #who-rated-page-area>div {
+     column-count: 1;
+    }
+}
+
+.pager .current {
+    border-style: solid;
+    outline: solid 1px rgb(250, 250, 250);
+}
+
+.pager a,
+.pager .current {
+    border-style: double;
+    border-width: 3px;
+    text-transform: uppercase;
+    background: none;
+    color: inherit;
+}
+
+.pager a:hover,
+.pager .current:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pager .target {
+    font-weight: 800;
+}
+
+.w-container {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    border-style: double !important;
+    border-width: 4px !important;
+    margin: auto;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.s-cell {
+    font-size: 1.25rem !important;
+}
+
+.anom-bar-container,
+.anom-bar-container * {
+    font-family: 'Work Sans', sans-serif !important;
+    font-weight: 700;
+}
+
+#page-content div.warning-box div.text-number, #page-content div.warning div.text-number {
+    font-size: 140%;
+    font-weight: 400;
+}
+
+#page-content div.warning-box strong, #page-content div.warning strong {
+    font-weight: 700;
+}
+
+#page-content div.warning-box div.text-top, #page-content div.warning div.text-top {
+    font-weight: 800;
+}
+
+#page-content div.warning-box, #page-content div.warning {
+    font-family: 'Work Sans', sans-serif !important;
+    font-weight: 500;
+}
+
+.collection {
+    font-family: 'Work Sans', sans-serif;
+    color: #905c5c;
+}
+
+.footer-wikiwalk-nav {
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+    width: fit-content;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.footer-wikiwalk-nav p {
+    color: #EDEDED;
+}
+
+.footer-wikiwalk-nav a, .footer-wikiwalk-nav p {
+    border-radius: 10px;
+    background: rgb(20, 20, 20);
+    width: fit-content;
+    margin: auto;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.footer-wikiwalk-nav a {
+    color: #bdbdff;
+}
+
+.footer-wikiwalk-nav a:hover {
+    text-decoration: underline;
+}
+
+/* MISC > WIKIDOT OWINDOW */
+
+/* ======================= */
+
+#owindow-1 {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 100%);
+}
+
+#owindow-1>div.title.modal-header {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 90%;
+    cursor: default;
+}
+
+#owindow-1>div.content.modal-body td.active>b {
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(100, 100, 100);
+}
+
+#owindow-1>div.content.modal-body>table {
+    max-height: 10rem;
+    overflow: auto;
+    display: block;
+}
+
+#owindow-1>div.content.modal-body>div {
+    margin-top: 1.5rem !important;
+    border-top: solid 0.2rem rgb(210, 210, 210);
+    padding-top: 1rem;
+}
+
+#owindow-1>div.content.modal-body>div>div>a {
+    background: #870000;
+}
+
+#owindow-1>div.content.modal-body>div>div>a:hover {
+    background: #470000;
+}
+
+#owindow-1>div.content.modal-body>img {
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.3));
+    padding: 0px 0px 0px 0px !important;
+    background: none;
+    background-color: transparent !important;
+    margin-right: 1.7rem;
+}
+
+#owindow-1 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ======================= */
+
+
+/* MISC > EDIT BOX & PAGE SOURCE */
+
+/* ======================= */
+
+#lock-info {
+    box-shadow: 0px 0px 4px #999999;
+    background: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    margin-left: 1rem;
+    font-size: 95%;
+    border: solid 1px grey;
+    color: #191919;
+}
+
+#edit-page-form>table.edit-page-bottomtable>tbody>tr>td:nth-child(1)>div.sub,
+#edit-page-form>table.form>tbody>tr>td:nth-child(1) {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+}
+
+#edit-page-form>table.edit-page-bottomtable>tbody>tr>td:nth-child(1)>div:nth-child(1) {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+.wd-editor-toolbar-panel ul li a {
+    height: 22px;
+    width: 22px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    border-radius: 2px;
+    filter: invert(1), hue-rotate(180deg);
+    filter: invert(1) hue-rotate( 180deg);
+}
+
+.wd-editor-toolbar-panel {
+    margin-bottom: 0.5rem;
+}
+
+input#edit-page-title.text {
+    border-radius: 4px;
+    font-family: 'Work Sans', sans-serif;
+    border: 2px solid #afafaf;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 5px 5px 5px;
+    font-size: 105%;
+    border: 0.13rem solid #949494;
+    background-color: #FFF;
+    color: #000;
+    border-radius: 2px;
+}
+
+.page-source {
+    background: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 105%;
+    border: none;
+    width: 80%;
+    box-shadow: 0px 0px 4px #999999;
+    padding: 18px 18px 18px 18px;
+    word-break: break-word;
+}
+
+/* ======================= */
+
+
+/* MISC > FONT SIZE/WEIGHT CHANGES */
+
+/* ======================= */
+
+#page-content strong {
+    font-weight: 900;
+}
+
+#page-content {
+    font-size: 110%;
+}
+
+/* ======================= */
+
+
+#show-upload-button {
+    float: unset;
+    border-radius: 6px;
+    border: solid 1px grey;
+    font-size: 0.85rem;
+}
+
+.edit-help-34 {
+    margin-top: 2px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.printuser a {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+
+form,
+#action-area>p,
+table.page-files td span {
+    font-family: 'Work Sans', sans-serif;
+}
+
+#action-area>table>thead>tr,
+#revision-list>table>tbody>tr:nth-child(1) {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#page-info {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+#page-info::first-letter,
+a.btn.btn-default.button.button-close::first-letter,
+a.btn.btn-default.button.button-close-message::first-letter,
+a.btn.btn-default.button.button-cancel::first-letter,
+a.btn.btn-default.button.button-rename::first-letter,
+a.btn.btn-default.button.button-no\,-cancel::first-letter,
+#owindow-1 > div.button-bar.modal-footer > a.btn.btn-default.button.button-yes\,-delete::first-letter,
+#owindow-1 td::first-letter {
+    text-transform: uppercase;
+}
+
+#owindow-1 td a::first-letter {
+    text-transform: lowercase !important;
+}
+
+.button-bar.modal-footer a.btn.btn-danger,
+#owindow-1>div.content.modal-body>div>div>a {
+    float: right !important;
+    margin-top: -0.73rem;
+}
+
+td:nth-child(1)>a {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+
+/* MISC > BUTTONS */
+
+/* ======================= */
+
+a.btn.btn-danger,
+a.btn.btn-primary,
+.btn-small,
+#owindow-1>div.button-bar.modal-footer>a,
+#edit-cancel-button,
+#edit-diff-button,
+#edit-preview-button,
+#edit-save-draft-button,
+#edit-save-continue-button,
+#edit-save-button,
+#owindow-1>div.content.modal-body>div>a.btn.btn-default {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600 !important;
+    font-size: 0.75rem;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+    padding-right: 9px;
+    background: rgb(20, 20, 20);
+    border-radius: 2px !important;
+    cursor: pointer;
+    width: fit-content !important;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    margin-left: 0.3rem;
+    margin-right: 0.35rem;
+    float: left;
+}
+
+a.collapsible-block-link:hover,
+a.btn.btn-danger:hover,
+a.btn.btn-primary:hover,
+.btn-small:hover,
+#owindow-1>div.button-bar.modal-footer>a:hover,
+#edit-cancel-button:hover,
+#edit-diff-button:hover,
+#edit-preview-button:hover,
+#edit-save-draft-button:hover,
+#edit-save-continue-button:hover,
+#edit-save-button:hover,
+#owindow-1>div.content.modal-body>div>a.btn.btn-default:hover {
+    text-decoration: none;
+    background: rgb(45, 45, 45);
+}
+
+#action-area > p:nth-child(5) > a:hover {
+    text-decoration: none;
+    background: rgb(45, 45, 45);
+}
+
+#action-area > p:nth-child(5) > a {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600 !important;
+    font-size: 0.75rem;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+    padding-right: 9px;
+    background: rgb(20, 20, 20);
+    border-radius: 2px !important;
+    cursor: pointer;
+    width: fit-content !important;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    margin-left: 0.3rem;
+    margin-right: 0.35rem;
+}
+
+/* ======================= */
+
+
+#footer,
+#license-area {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+}
+
+#page-content div.collapsible-block {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+div.collapsible-block-content {
+    animation: fade 0.4s;
+    animation-fill-mode: forwards;
+}
+
+
+/* MISC > FOOTNOTES */
+
+/* ======================= */
+
+.hovertip {
+    background: rgb(25, 25, 25) !important;
+    border-radius: 2px;
+    padding: 5px 5px 5px 5px;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    max-width: 400px;
+}
+
+.f-heading {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 80%;
+}
+
+.footnotes-footer .title {
+    font-size: 0px;
+    color: transparent;
+    margin-bottom: 15px;
+}
+
+.footnotes-footer .title:before {
+    content: "Footnotes \0026  References";
+    color: rgb(25, 25, 25);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.9rem;
+    font-family: 'Work Sans', sans-serif;
+    cursor: text;
+}
+
+.footnotes-footer a {
+    color: black;
+    font-weight: 700;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.footnotes-footer {
+    border-left: solid 3px rgb(20, 20, 20);
+    padding-left: 15px;
+    margin-top: 6rem;
+}
+
+.footnote .f-footer,
+.equation .e-footer,
+.reference .r-footer {
+    display: none;
+}
+
+/* ======================= */
+
+
+#page-options-container a {
+    color: rgb(45, 45, 45);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    font-size: 90%;
+    text-transform: uppercase;
+}
+
+#page-options-container a:hover {
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+}
+
+#page-info-break {
+    height: 3rem;
+}
+
+.code pre,
+.code p,
+.code,
+tt {
+    font-family: 'Fira Code', monospace;
+}
+
+#account-options {
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    width: fit-content;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 30%);
+    padding: 5px 5px 5px 5px;
+    text-transform: uppercase;
+}
+
+#account-options a {
+    filter: grayscale(100%) saturate(0%);
+    -webkit-filter: grayscale(100%) saturate(0%);
+    color: grey;
+}
+
+
+/* Anendlessusername's invaluable correction of the ACS octagon! */
+#page-content .quadrants>div {
+    top: 2.25%;
+    left: 18.5%;
+}
+/* WHEN YOU SEE IT... */
+
+
+.licensebox .collapsible-block-link,
+.licensebox .collapsible-block-link:hover {
+    background: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* ---- WORDS NO LONGER BROKEN, THE CROQUEMBOUCHE HAS SPOKEN ---- */
+
+#page-content span, #page-content a {
+    word-break: normal !important;
+}

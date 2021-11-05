@@ -1,0 +1,94 @@
+/* ======================= */
+
+/* TABS */
+
+/* ======================= */
+
+ul.yui-nav a {
+    font-family: 'Work Sans', sans-serif;
+    padding: 3.5px;
+    color: white;
+    font-weight: 600;
+}
+
+.yui-navset .yui-nav .selected,
+.yui-navset .yui-navset-top .yui-nav .selected,
+.yui-navset .yui-nav a:hover,
+yui-navset .yui-nav a:active {
+    color: white;
+    background-color: black;
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border: none;
+    border-bottom: dotted 1px grey;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.yui-navset .yui-content>div {
+    display: block;
+    top: 0;
+    overflow: hidden;
+    transform-origin: 0 0;
+}
+
+.yui-navset-top a {
+    transition-property: background, background-color;
+    transition-duration: 0.2s;
+}
+
+/* Tab animation by Croquembouche */
+/*---------------------------------------------*/
+
+#page-content .yui-navset .yui-content>div[style*="none"] {
+    display: block !important;
+    flex: 0;
+    max-height: 0;
+    padding: 0 0.5em;
+    border-width: 0;
+    /* The following transition affects the one that DISAPPEARS */
+    transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, flex 0.5s cubic-bezier(.18, .51, .54, .9) 0s;
+    animation: tab-disappear 0.5s ease-in-out 0s 1 both;
+}
+
+#page-content .yui-navset .yui-content>div[style*="block"] {
+    display: block !important;
+    flex: 1;
+    max-height: 9999rem;
+    /* The following transition affects the one that APPEARS */
+    transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, flex 0.5s cubic-bezier(.18, .51, .54, .9) 0.5s;
+    animation: tab-appear 0.5s ease-in-out 0.5s 1 both;
+}
+
+@keyframes tab-disappear {
+    0% {
+     max-height: 9999rem;
+    }
+    1% {
+     max-height: 100vh;
+    }
+    100% {
+     max-height: 0;
+    }
+}
+
+@keyframes tab-appear {
+    0% {
+     max-height: 0;
+    }
+    99% {
+     max-height: 100vh;
+    }
+    100% {
+     max-height: 9999rem;
+    }
+}
+
+/*---------------------------------------------*/
+
+.yui-navset .yui-content {
+    background: transparent;
+    box-shadow: none;
+    border-bottom: dotted 4px grey;
+}
