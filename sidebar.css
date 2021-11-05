@@ -1,0 +1,111 @@
+/* ======================= */
+
+
+
+/* SIDEBAR */
+
+/* ======================= */
+
+#u-sb-button {
+    display: block;
+    position: fixed;
+    top: 0.5rem;
+    left: 0.9rem;
+    height: 4rem;
+    width: 45px;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-decoration: none !important;
+    z-index: 21;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: translateZ(0);
+    animation: slideLeft 1s;
+}
+
+#u-sb-button:hover {
+    font-weight: 900;
+}
+
+#side-bar {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient( 0deg, rgba(255, 255, 255, 1) 87%, rgba(250, 250, 250, 1) 100%);
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400 !important;
+    overflow-x: hidden;
+}
+
+#side-bar::before {
+    content: var(--sidesubtitle);
+    background: var(--sidelogo);
+    background-size: 4.5rem;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-bottom: 0.3rem;
+    padding-top: 4.7rem;
+    display: inline-block;
+    border-bottom: double 5px black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    text-transform: none;
+}
+
+#side-bar,
+#side-bar:target {
+    z-index: 22;
+}
+
+#side-bar a {
+    color: black;
+}
+
+#side-bar a:visited {
+    color: black;
+}
+
+#side-bar img,
+iframe.scpnet-interwiki-frame {
+    filter: grayscale(100%) saturate(0%);
+    -webkit-filter: grayscale(100%) saturate(0%);
+}
+
+#side-bar .side-block {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 100%);
+    border-color: transparent;
+    border-radius: 0px;
+}
+
+#side-bar .side-block.media {
+    background-color: white;
+    border-bottom: solid 2px rgb(190, 190, 190);
+    border-top: solid 2px rgb(190, 190, 190);
+    margin-top: 1rem;
+}
+
+#side-bar .heading {
+    color: black;
+    border-bottom: solid 1px black;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+}
+
+#side-bar .collapsible-block-folded {
+    background-image: url(https://scp-wiki.wdfiles.com/local--files/theme%3Aminimal/expand.png);
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px black;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: black;
+}

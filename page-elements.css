@@ -1,0 +1,753 @@
+/* ======================= */
+
+/* CONTENT */
+
+/* ======================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: black;
+}
+
+.top-left-box>.item {
+    display: none;
+}
+
+hr {
+    background-color: #333;
+}
+
+.info-container {
+    padding-bottom: 8px
+}
+
+
+/* CONTENT > CUSTOM DIVS */
+
+/* ======================= */
+
+.document {
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 26px auto 0;
+    max-width: 550px;
+    min-height: 300px;
+    padding: 24px;
+    padding-top: 50px;
+    position: relative;
+    width: 80%;
+}
+
+.document:before,
+.document:after {
+    content: "";
+    height: 98%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.document:before {
+    background: #fafafa;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    left: -5px;
+    top: 4px;
+    transform: rotate(-2.5deg);
+}
+
+.document:after {
+    background: #f6f6f6;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    right: -3px;
+    top: 1px;
+    transform: rotate(1.4deg);
+}
+
+.darkdocument {
+    background: rgb(30, 30, 30);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 26px auto 0;
+    max-width: 550px;
+    min-height: 300px;
+    padding: 24px;
+    padding-top: 50px;
+    position: relative;
+    width: 80%;
+    color: #EDEDED;
+}
+
+.darkdocument:before,
+.darkdocument:after {
+    content: "";
+    height: 98%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.darkdocument:before {
+    background: rgb(25, 25, 25);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    left: -5px;
+    top: 4px;
+    transform: rotate(-2.5deg);
+}
+
+.darkdocument:after {
+    background: rgb(25, 25, 25);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    right: -3px;
+    top: 1px;
+    transform: rotate(1.4deg);
+}
+
+.notation {
+    border-left: solid 3px rgb(30, 30, 30);
+    border-right: solid 3px rgb(30, 30, 30);
+    padding: 25px 25px 25px 25px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    width: 75%;
+    margin: auto;
+    background: #f7f7f7;
+}
+
+.modal {
+    padding: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    width: auto;
+    margin: auto;
+    background: rgb(253, 253, 253);
+    border: solid 2px #5D5D5D;
+}
+
+.smallmodal {
+    padding: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    width: 75%;
+    margin: auto;
+    background: rgb(253, 253, 253);
+    border: solid 2px #5D5D5D;
+}
+
+.jotting {
+    padding: 5px 10px 5px 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    width: 75%;
+    margin: auto;
+    background: #FDFDFD;
+    border: dashed 0.1rem #5D5D5D;
+}
+
+.transcript {
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin: auto;
+    background: rgb(253, 253, 253);
+    border: dotted 1px #5D5D5D;
+    border-radius: 10px;
+}
+
+.papernote {
+    background-color: #eaeeef;
+    color: #21252E !important;
+    padding: 0.1rem 0.5rem 0.5rem 0.5rem;
+    box-shadow: 1px 1px 3px 2px rgb(0 0 0 / 30%);
+    margin: auto;
+    width: 65%;
+}
+
+.raisa_memo {
+    background: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/RAISA_LIGHTLOGO.png) #fff3ad;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    word-break: break-word;
+}
+
+.raisa_memo>p:nth-child(1)::before {
+    content: "NOTICE FROM THE RECORDS AND INFORMATION SECURITY ADMINISTRATION\00000a";
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: dotted 0.13rem darkslategrey;
+    max-width: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+.classification_memo {
+    background: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/CLASSIFICATION_LIGHTLOGO.png) #edf5f3;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    word-break: break-word;
+}
+
+.classification_memo>p:nth-child(1)::before {
+    content: "CLASSIFICATION COMMITTEE MEMORANDUM\00000a";
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: dotted 0.13rem darkslategrey;
+    max-width: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+.ettra_memo {
+    background: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/ETTRA_LIGHTLOGO.png) #f5d7d7;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    word-break: break-word;
+}
+
+.ettra_memo>p:nth-child(1)::before {
+    content: "NOTICE FROM THE EMERGENT THREAT TACTICAL RESPONSE AUTHORITY\00000a";
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: dotted 0.13rem darkslategrey;
+    max-width: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+.ethics_memo {
+    background: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/ETHICS_LIGHTLOGO.png) #ffdbc4;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    word-break: break-word;
+}
+
+.ethics_memo>p:nth-child(1)::before {
+    content: "ETHICS COMMITTEE MEMORANDUM\00000a";
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: dotted 0.13rem darkslategrey;
+    max-width: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+.temporal_memo {
+    background: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/DELTA_T_LIGHTLOGO.png) #ffffff;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
+    border: double 3px lightgrey;
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    word-break: break-word;
+}
+
+.temporal_memo>p:nth-child(1)::before {
+    content: "THE TEMPORAL ANOMALIES DEPARTMENT\00000a";
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: dotted 0.13rem darkslategrey;
+    max-width: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+.overwatch_memo {
+    background: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/O5_LIGHTLOGO.png) #e3e3e3;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 30px 20px 20px;
+    word-break: break-word;
+}
+
+.overwatch_memo>p:nth-child(1)::before {
+    content: "OVERWATCH COMMAND\00000a";
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.55rem;
+    border-bottom: dotted 0.13rem darkslategrey;
+    max-width: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+.miscomm_memo {
+    background: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/MISCOMM_LIGHTLOGO.png) #eeedfa;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 30px 20px 20px;
+    word-break: break-word;
+}
+
+.miscomm_memo>p:nth-child(1)::before {
+    content: "NOTICE FROM THE DEPARTMENT OF MISCOMMUNICATIONS\00000a";
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: dotted 0.13rem darkslategrey;
+    max-width: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+.raisa_memo a,
+.temporal_memo a,
+.classification_memo a,
+.overwatch_memo a,
+.ettra_memo a,
+.ethics_memo a,
+.miscomm_memo a {
+    font-weight: 700;
+}
+
+.bigtext {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+
+.st {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+
+/* ======================= */
+
+/* CONTENT > TABLES */
+
+/* ======================= */
+
+#page-content .wiki-content-table tr th {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    border: solid 1px #000;
+    background-color: #aaa;
+}
+
+#page-content .wiki-content-table tr td {
+    border: 1px #000 solid;
+}
+
+#page-content .table1 tr th {
+    background-color: #D7EFE7;
+}
+
+#page-content .table1 .st {
+    color: #D7EFE7;
+}
+
+#page-content .table2 tr th {
+    background-color: #D8ECF4;
+}
+
+#page-content .table2 .st {
+    color: #D8ECF4;
+}
+
+#page-content .table3 tr th {
+    background-color: #FDF6D7;
+}
+
+#page-content .table3 .st {
+    color: #FDF6D7;
+}
+
+#page-content .table4 tr th {
+    background-color: #FFDABF;
+}
+
+#page-content .table4 .st {
+    color: #FFDABF;
+}
+
+#page-content .table5 tr th {
+    background-color: #F5D8E0;
+}
+
+#page-content .table5 .st {
+    color: #F5D8E0;
+}
+
+#page-content .table6 tr th {
+    background-color: rgba(146, 0, 255, 0.2);
+}
+
+#page-content .table6 .st {
+    color: rgb(146, 0, 255);
+}
+
+.tableb .wiki-content-table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    padding-left: -100px;
+}
+
+.table1 .scp-image-block .scp-image-caption {
+    background-color: #D7EFE7;
+    color: black;
+}
+
+.table2 .scp-image-block .scp-image-caption {
+    background-color: #D8ECF4;
+    color: black;
+}
+
+.table3 .scp-image-block .scp-image-caption {
+    background-color: #FDF6D7;
+    color: black;
+}
+
+.table4 .scp-image-block .scp-image-caption {
+    background-color: #FFDABF;
+    color: black;
+}
+
+.table5 .scp-image-block .scp-image-caption {
+    background-color: #F5D8E0;
+    color: black;
+}
+
+.table6 .scp-image-block .scp-image-caption {
+    background-color: rgba(146, 0, 255, 0.2);
+    color: black;
+}
+
+
+/* ======================= */
+
+/* CONTENT > RATING MODULE */
+
+/* ======================= */
+
+.rate-points {
+    color: black !important;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    font-size: 90%;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown,
+.page-rate-widget-box .cancel,
+.page-rate-widget-box .rate-points {
+    border: none;
+}
+
+
+/* ======================= */
+
+/* CONTENT > IMAGE BLOCK */
+
+/* ======================= */
+
+.scp-image-block img {
+    background: white;
+}
+
+.scp-image-block.block-right {
+    margin: 0em 0em 1em 2em;
+}
+
+.scp-image-block.block-center {
+    max-width: 99% !important;
+}
+
+.scp-image-block {
+    border: none;
+    box-shadow: none;
+}
+
+.scp-image-block .scp-image-caption {
+    border-top: none !important;
+    margin-top: 8px;
+    background-color: #292929;
+    color: #ffffff;
+}
+
+.scp-image-block img,
+.scp-image-block .scp-image-caption {
+    outline: solid 1px #444;
+    box-shadow: 0px 0px 5px #999999;
+}
+
+.scp-image-block .scp-image-caption p {
+    font-size: 110%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* ======================= */
+
+/* CONTENT > LINKS */
+
+/* ======================= */
+
+a {
+    color: #0645AD;
+}
+
+a.newpage {
+    color: #CC2200;
+}
+
+a:visited {
+    color: #0B0080;
+}
+
+.danger-diamond a, .danger-diamond a::selection {
+    color: transparent;
+    background: none;
+}
+
+.scp-image-block .scp-image-caption a {
+    color: #c5c5c5;
+}
+
+
+/* ======================= */
+
+/* CONTENT > SCROLLBAR */
+
+/* ======================= */
+
+::-webkit-scrollbar {
+    cursor: pointer;
+    border: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(45, 45, 45);
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+
+/* ======================= */
+
+/* CONTENT > COLLAPSIBLES */
+
+/* ======================= */
+
+a.collapsible-block-link {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+    padding-right: 9px;
+    background: rgb(20, 20, 20);
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* ======================= */
+
+/* CONTENT > PAGE TITLE / BREADCRUMBS */
+
+/* ======================= */
+
+#page-title,
+.meta-title {
+    display: block !important;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    color: #252525;
+    border: none;
+    margin-top: 3rem;
+}
+
+#breadcrumbs {
+    text-transform: uppercase;
+    color: grey;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: -1.5rem;
+    font-size: 90%;
+}
+
+
+/* ======================= */
+
+/* CONTENT > BETTERFOOTNOTES INTEGRATION */
+
+/* ======================= */
+
+.fnnum:hover {
+    background: transparent;
+    transform: scale(1.3);
+}
+
+.fnnum {
+    transition-duration: 0.2s;
+    transition-property: transform;
+    transform: translateZ(0);
+}
+
+.fnnum::after {
+    color: #3f21ff !important;
+}
+
+.fnnum:hover::after {
+    color: white !important;
+}
+
+.fncon {
+    background: rgb(25, 25, 25) !important;
+    color: #EDEDED;
+    border: 0.15rem solid rgb(20, 20, 20);
+    border-radius: 2px;
+    font-size: 90%;
+}
+
+
+/* ======================= */
+
+/* TAGS */
+
+/* ======================= */
+
+#main-content .page-tags a {
+    line-height: inherit;
+    background-color: rgb(20, 20, 20);
+    border-radius: 2px 6px;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+}
+
+.page-tags span {
+    border-top: none;
+}
