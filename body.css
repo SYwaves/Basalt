@@ -1,0 +1,28 @@
+/* ======================= */
+
+/* MAIN */
+ 
+/* ======================= */
+ 
+:root {
+    --title: " SCP FOUNDATION";
+    --subtitle: " SECURE • CONTAIN • PROTECT";
+    --barColour: rgb(20, 20, 20);
+    --fnColor: rgb(15, 15, 15);
+    --logo: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/basalt_logotype_black.png);
+    --sidelogo: var(--logo);
+    --sidesubtitle: var(--subtitle);
+}
+ 
+body {
+    background: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+}
+ 
+#main-content {
+    top: -2.8rem;
+}
+ 
+#container-wrap-wrap {
+    overflow-x: hidden;
+}
